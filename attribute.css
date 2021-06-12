@@ -1,7 +1,9 @@
 ::-webkit-scrollbar{
     width : 20px;
 }
-
+::-webkit-scrollbar-corner{
+    background-color: #eccfa5;
+}
 /* Track */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey; 
@@ -19,18 +21,19 @@
     background:#816751; 
   }
 body{
-    margin-right: -10px;
+    overflow-x: hidden;
+    background-color: #eccfa5;
 }
 header{
-    background-image: url("img/baconBG1.png");
+    background-image: url("img/baconBG1.png") ;
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: center;
-    margin: 0%;
     margin-left: -10px;
     margin-top: -10px;
     margin-bottom: -10px ;
-    size: 100em;
+    margin-right: -10px;
+    size: 110em;
 }
 #head{
     margin-top: -10px;
@@ -48,13 +51,17 @@ header{
     image-rendering: optimizeQuality;
 }
 div{
-
+    height: 100%;
+    margin: -25px -10px -10px -10px;
     font-family: 'Prompt', sans-serif;
+    padding-left: 50px;
 }
 #intro{
-    margin-top: 50px;
-    margin-left: 100px;
+    height: 1000px;
+    font-size: larger;
 }
-nav{
-    margin-left: -20px;
+#introParagraph{
+    padding-top: 50px;
+    
 }
+
