@@ -11,16 +11,18 @@ body{
     font-family: 'Nunito', sans-serif;
     font-size: 36px;
     opacity: 26%;
+    -webkit-padding-start: 50px;
 }
 #email{
     position: relative;
     top: -550px;
-    left: -70px;
+    left: -35px;
+
 }
 #password {
     position: relative;
     top: -430px;
-    left: -505px;
+    left: -520px;
 }
 button{
     border-radius: 60px;
@@ -51,7 +53,8 @@ button{
     color: white;
     width: 243px;
     height: 71px;
-
+    margin-left: 100px;
+    left : -160px
 } 
 #signup{
     position: relative;
@@ -70,4 +73,6 @@ button{
     color: white;
     width: 243px;
     height: 71px;
+    margin-right: 100px;
+    left : 370px
 } 
