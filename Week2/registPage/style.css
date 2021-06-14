@@ -1,0 +1,73 @@
+body{
+    
+    background-image: url("img/bg.png") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.textbox input{
+    border-radius: 25px;
+    box-shadow: #00000011;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    opacity: 26%;
+}
+#email{
+    position: relative;
+    top: -550px;
+    left: -70px;
+}
+#password {
+    position: relative;
+    top: -430px;
+    left: -505px;
+}
+button{
+    border-radius: 60px;
+    background-color: transparent;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 28px;
+    width: 343px;
+    height: 91px;
+    transition-duration: 0.4s;
+    
+}
+#signin{
+    position: relative;
+    top: -350px;
+    left: -110px;
+    color: #9C698D;
+    border : 3px solid #9C698D;
+}
+#signin:hover{
+    background-color: #9C698D;
+    color: white;
+} 
+#signin:active{
+    background-color: #9C698D;
+    font-size: 20px;
+    color: white;
+    width: 243px;
+    height: 71px;
+
+} 
+#signup{
+    position: relative;
+    top: -340px;
+    left: 320px;
+    color: #FFC996;
+    border : 3px solid #FFC996;
+}
+#signup:hover{
+    background-color: #FFC996;
+    color: white;
+} 
+#signup:active{
+    background-color: #FFC996;
+    font-size: 20px;
+    color: white;
+    width: 243px;
+    height: 71px;
+} 
