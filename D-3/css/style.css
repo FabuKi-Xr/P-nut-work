@@ -1,14 +1,21 @@
 .bg-header{
-    background-image: linear-gradient(rgba(9,103,0,0.9),rgba(0,255,123,0.782)),url("https://www.supermarketperimeter.com/ext/resources/2019/12/MeatPoultryProducts_Lead.jpg?1579276511");
+    background-image: linear-gradient(rgba(0, 103, 89, 0.2),rgba(255, 187, 0, 0.2)),url("https://wallpapercave.com/wp/wp2053415.jpg");
     opacity: 0.5;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 85vh;
+    height: 87vh;
 }
 .heading{
     position : absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+nav{
+    background-color: #4CAF50;
+}
+.menu{
+    padding: 3rem;
+    font-family: 'Calligraffitti', cursive;
 }
