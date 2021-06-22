@@ -16,6 +16,27 @@ nav{
     background-color: #4CAF50;
 }
 .menu{
-    padding: 3rem;
+    padding: 3.5rem;
+    
+}
+.describe{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+}
+table{
     font-family: 'Calligraffitti', cursive;
+    margin-top: 20px;
+}
+thead{
+    font-size: 20px;
+}
+tbody{
+    text-align: center;
+    font-weight: 700;
+}
+p{
+    margin: 0%;
+}
+tr{
+    height: 100px;
 }
