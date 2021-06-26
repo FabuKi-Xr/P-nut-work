@@ -67,7 +67,8 @@ function cal(){
             grade = 0;
         }
         else{
-            
+            alert("Be aware of entering your grade");
+            break;
         }
 
         if(document.getElementById("weight"+i).value === '' || document.getElementById("grade"+i).value === ''){
@@ -93,4 +94,6 @@ function erase(){
     document.getElementById("showGPA").innerHTML  = '';
     console.log("clear!");
 }
-
+// function mouseOver(row){
+//     document.getElementById(row)
+// }
