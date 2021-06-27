@@ -40,8 +40,10 @@ function cal(){
     var Multiple = 0.0;
     var sumWeight = 0.0;
     var GPA = 0.0;
+    Boolean = false;
     for(var i=1;i<=currentRow;i++){
         var grade = document.getElementById("grade"+i).value;
+        var weight = document.getElementById("weight"+i).value;
         if(grade === "A"){
             grade = 4.00;
         }
@@ -66,14 +68,21 @@ function cal(){
         else if(grade === "F"){
             grade = 0;
         }
-        else{
-            alert("Be aware of entering your grade");
+        else {
+            console.log("grade4 : " + isNaN(parseInt(grade)));
+            if(grade === ''){
+                grade = 0;
+            }
+            else if(isNaN(parseFloat(grade)) && isNaN(parseInt(grade))){
+                alert("Be aware of entering your grade");
             break;
+            }
+            
         }
 
-        if(document.getElementById("weight"+i).value === '' || document.getElementById("grade"+i).value === ''){
-            weight = 0;
-            Multiple += parseFloat(0*weight);
+        if(isNaN(parseInt(weight))&& weight !== ''){
+            alert("something wrong. Be careful of entering Weight value");
+            break;
         }
         else{
             weight = parseFloat(document.getElementById("weight"+i).value);
@@ -81,9 +90,15 @@ function cal(){
         }
         sumWeight += weight;
     }
+    console.log("Multiple: " + Multiple);
+    console.log("sumWeight : " + sumWeight);
     GPA = Multiple/sumWeight;
-    document.getElementById("showGPA").innerHTML = GPA.toFixed(2);
-    console.log("GPA : " + GPA.toFixed(2));
+
+    if(!isNaN(GPA)){
+        document.getElementById("showGPA").innerHTML = GPA.toFixed(2);
+    }
+    
+    console.log("grade4 : " + grade);
 }
 function erase(){
     for(var i=1 ; i<=currentRow;i++){
