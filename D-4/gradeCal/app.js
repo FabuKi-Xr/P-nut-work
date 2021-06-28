@@ -34,7 +34,6 @@ function addRows(){
     document.getElementById("grade"+currentRow).value = '';
     document.getElementById("weight"+currentRow).value = '';
 
-    console.log(clnInputSub.id);
 }
 function cal(){
     var Multiple = 0.0;
@@ -78,10 +77,12 @@ function cal(){
             break;
             }
         }
-
+        
+        
         if(weight === '' ){
             weight = 0;
         }
+
         if(weight !== '' && isNaN(parseFloat(weight))){
             alert("something wrong. Be careful of entering Weight value");
             break;
@@ -89,9 +90,6 @@ function cal(){
             weight = parseFloat(weight);
             Multiple += grade*weight;
         sumWeight += weight;
-        console.log("grade : " + grade +"[" + i + "]");
-        console.log("multiple: " + Multiple +"[" + i + "]");
-        console.log("sumweight : " + sumWeight +"[" + i + "]");
     }
     GPA = Multiple/sumWeight;
 
@@ -106,8 +104,5 @@ function erase(){
     document.getElementById("weight"+i).value = '';
     }
     document.getElementById("showGPA").innerHTML  = '';
-    console.log("clear!");
 }
-// function mouseOver(row){
-//     document.getElementById(row)
-// }
+
