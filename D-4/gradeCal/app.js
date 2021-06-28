@@ -69,7 +69,7 @@ function cal(){
             grade = 0;
         }
         else {
-            console.log("grade4 : " + isNaN(parseInt(grade)));
+            console.log("grade4 : " + isNaN((isNaN(parseFloat(grade)) && isNaN(parseInt(grade)))));
             if(grade === ''){
                 grade = 0;
             }
@@ -77,28 +77,27 @@ function cal(){
                 alert("Be aware of entering your grade");
             break;
             }
-            
         }
 
-        if(isNaN(parseInt(weight))&& weight !== ''){
+        if(weight === '' ){
+            weight = 0;
+        }
+        if(weight !== '' && isNaN(parseFloat(weight))){
             alert("something wrong. Be careful of entering Weight value");
             break;
         }
-        else{
-            weight = parseFloat(document.getElementById("weight"+i).value);
+            weight = parseFloat(weight);
             Multiple += grade*weight;
-        }
         sumWeight += weight;
+        console.log("grade : " + grade +"[" + i + "]");
+        console.log("multiple: " + Multiple +"[" + i + "]");
+        console.log("sumweight : " + sumWeight +"[" + i + "]");
     }
-    console.log("Multiple: " + Multiple);
-    console.log("sumWeight : " + sumWeight);
     GPA = Multiple/sumWeight;
 
     if(!isNaN(GPA)){
         document.getElementById("showGPA").innerHTML = GPA.toFixed(2);
     }
-    
-    console.log("grade4 : " + grade);
 }
 function erase(){
     for(var i=1 ; i<=currentRow;i++){

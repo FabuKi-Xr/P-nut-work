@@ -41,9 +41,7 @@ table{
 }
 
 .showGPA{
-
-    border-radius: 15px;
-
+    margin-left: 130px;
 }
 label{
     color : #AC4B1C;
@@ -51,14 +49,18 @@ label{
     animation-name: display;
     animation-duration: 5s;
     animation-timing-function: linear;
-    animation-delay: 3s;
+    animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 @keyframes display{
     0%   {color : #AC4B1C;font-size: 12px;}
     25%  {color:#FCA652;font-size: 22px;}
-    50%  {color:#FFD57E;font-size: 30px;}
-    75%  {color:#FFEFA0;font-size: 36px;}
-    100%  {color:#FFEFA0;font-size: 48px;}
+    50%  {color:#FFD57E;font-size: 30px; margin-top: -10px;}
+    75%  {color:#FFEFA0;font-size: 36px; margin-top: -15px;}
+    100% {color:#FFEFA0;font-size: 48px; margin-top: -25px;}
+}
+h5{
+    font-family: 'Convergence', sans-serif;
+    position: absolute;
 }
